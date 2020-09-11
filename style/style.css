@@ -77,15 +77,6 @@ nav ul {
   height: 500px;
 }
 
-footer {
-  background-color: #445;
-  color: #ffffff;
-}
-
-.footer-links a{
-  color: #fff;
-}
-
 li a:hover,
 .dropdown:hover .dropbtn {
   background-color: none;
@@ -94,6 +85,7 @@ li a:hover,
 
 li.dropdown {
   display: inline-block;
+  
 }
 
 .dropdown-content {
@@ -112,11 +104,11 @@ li.dropdown {
   display: block;
   text-align: left;
   border-bottom: 1px dotted lightslategray;
+  
 }
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  
 }
 
 .dropdown:hover .dropdown-content {
@@ -133,4 +125,24 @@ li.dropdown {
 .right {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+
+
+footer {
+  background-color: #445;
+  color: #ffffff;
+}
+
+.footer-links a {
+  color: #fff;
+}
+
+.fuzzy:hover {
+  webkit-filter: blur(2.5px);
+  /*Chrome,Safari,Opera*/filter: blur(2.5px);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
