@@ -1,0 +1,136 @@
+html {
+  font-size: 62.5%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #445;
+  font-family: 'Raleway',
+  sans-serif;
+}
+h1{
+font-size: 5.5rem;
+color: #FF4500;
+font-family: 'Orbitron',
+sans-serif;
+}
+h2{
+  font-size: 6.5rem;
+  font-weight: bolder;
+}
+h3 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+a{
+  color: #445;
+  text-decoration: none;
+  font-weight: 400;
+}
+li{
+  font-size: 1.5rem;
+  font-family: 'Montserrat',
+  sans-serif;
+}
+li a:hover{
+  color: rgb(255, 38, 0);
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.orange-word {
+  color: rgb(255, 38, 0);
+}
+
+
+.nav-container{
+  background: white;
+}
+
+nav{
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 4;
+  list-style-type: none;
+}
+
+.home{
+  height: 500px;
+}
+
+footer {
+  background-color: #445;
+  color: #ffffff;
+}
+
+.footer-links a{
+  color: #fff;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: none;
+  
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #445;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-bottom: 1px dotted lightslategray;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.arrow {
+  border: solid #FF4500;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
