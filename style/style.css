@@ -14,7 +14,7 @@ body {
   sans-serif;
 }
 h1{
-font-size: 5.5rem;
+font-size: 5.0rem;
 color: #FF4500;
 font-family: 'Orbitron',
 sans-serif;
@@ -38,7 +38,7 @@ li{
   sans-serif;
 }
 li a:hover{
-  color: rgb(255, 38, 0);
+  color: #FF4500;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
@@ -46,17 +46,28 @@ li a:hover{
   -o-transition: .5s;
 }
 
+.contact{
+  border: 2px solid #FF4500;
+  padding: 10px;
+}
+
+.contact:hover {
+  background: #FF4500;
+  color:white;
+}
 .orange-word {
-  color: rgb(255, 38, 0);
+  color: #FF4500;
 }
 
 
 .nav-container{
   background: white;
+  margin: auto;
+  text-align: center;
 }
 
 nav{
-  width: 80%;
+  width: 90%;
   margin: auto;
   min-height: 10vh;
   padding: 3rem 0rem;
@@ -77,15 +88,6 @@ nav ul {
   height: 500px;
 }
 
-footer {
-  background-color: #445;
-  color: #ffffff;
-}
-
-.footer-links a{
-  color: #fff;
-}
-
 li a:hover,
 .dropdown:hover .dropbtn {
   background-color: none;
@@ -94,6 +96,7 @@ li a:hover,
 
 li.dropdown {
   display: inline-block;
+  
 }
 
 .dropdown-content {
@@ -112,11 +115,11 @@ li.dropdown {
   display: block;
   text-align: left;
   border-bottom: 1px dotted lightslategray;
+  
 }
 
 .dropdown-content a:hover {
   background-color: #f1f1f1;
-  
 }
 
 .dropdown:hover .dropdown-content {
@@ -124,7 +127,7 @@ li.dropdown {
 }
 
 .arrow {
-  border: solid #FF4500;
+  border: solid #000000;
   border-width: 0 2px 2px 0;
   display: inline-block;
   padding: 3px;
@@ -134,3 +137,72 @@ li.dropdown {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+img {
+  display: block;
+  max-width: fit-content;
+  text-align: center;
+  margin: auto;
+  width: 95vw;
+  
+}
+
+.showcase{
+  margin-top: 150px;
+}
+footer {
+  background-color: #445;
+  color: #ffffff;
+  text-align: center;
+  
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.footer-links a {
+  color: #fff;
+  padding: 3px;
+}
+
+.footer-links {
+  margin-bottom: 5px;
+}
+
+.fuzzy:hover {
+  webkit-filter: blur(2.0px);
+  /*Chrome,Safari,Opera*/filter: blur(2.0px);
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+h5 {
+  padding: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Orbitron',
+  sans-serif;
+
+}
+
+.call-to-action-btn {
+  background: #ffffff;
+  font-size: 2.5rem;
+  color: #FF4500;
+  padding: 20px;
+  border:2px solid #FF4500;
+  margin-top: 20px;
+}
+
+.call-to-action-btn:hover{ color: #ffffff; background: #FF4500; transition: .5s; -webkit-transition: .5s; -moz-transition: .5s; -ms-transition: .5s; -o-transition: .5s;
+}
+.address{
+  padding: 1.5rem;
+}
+
+.home{
+  margin: auto;
+  text-align: center;
+}
+
