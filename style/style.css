@@ -150,6 +150,13 @@ img {
 .showcase{
   margin-top: 150px;
 }
+
+.sections {
+  color:#445;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
 footer {
   background-color: #445;
   color: #ffffff;
