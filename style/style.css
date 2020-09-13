@@ -12,9 +12,39 @@ body {
   color: #445;
   font-family: 'Raleway',
   sans-serif;
+  height: 100vh;
+  cursor: none;
+  margin: 0 auto;
 }
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FF4500;
+  background: #FF4500;
+  position: absolute;
+  opacity: .5;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: cursorAnim .5s infinite alternate;
+  -webkit-animation: cursorAnim .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to{
+    transform: scale(.7)
+  }
+}
+
 h1{
-font-size: 5.0rem;
+font-size: 4.0rem;
 color: #FF4500;
 font-family: 'Orbitron',
 sans-serif;
@@ -33,7 +63,7 @@ a{
   font-weight: 400;
 }
 li{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: 'Montserrat',
   sans-serif;
 }
@@ -48,7 +78,7 @@ li a:hover{
 
 .contact{
   border: 2px solid #FF4500;
-  padding: 10px;
+  padding: 10px 25px;
 }
 
 .contact:hover {
@@ -85,12 +115,12 @@ nav ul {
 }
 
 .home{
-  height: 500px;
+  height: 400px;
 }
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-color: none;
+  background-co5or: none;
   
 }
 
@@ -151,7 +181,7 @@ img {
   margin-top: 150px;
 }
 
-.sections {
+.sections-title {
   color:#445;
   font-size: 3.5rem;
   font-weight: 600;
@@ -213,3 +243,38 @@ h5 {
   text-align: center;
 }
 
+.portrait {
+  height: 300px;
+  width: auto;
+  margin-bottom: 100px;
+}
+
+.about {
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 550px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  
+}
+
+
+.solutions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 1.5rem;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid-item {
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 550px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+
+}
