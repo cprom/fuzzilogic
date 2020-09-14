@@ -12,9 +12,39 @@ body {
   color: #445;
   font-family: 'Raleway',
   sans-serif;
+  height: 100vh;
+  cursor: none;
+  margin: 0 auto;
 }
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #FF4500;
+  background: #FF4500;
+  position: absolute;
+  opacity: .5;
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: cursorAnim .5s infinite alternate;
+  -webkit-animation: cursorAnim .5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to{
+    transform: scale(.7)
+  }
+}
+
 h1{
-font-size: 5.0rem;
+font-size: 4.0rem;
 color: #FF4500;
 font-family: 'Orbitron',
 sans-serif;
@@ -33,7 +63,7 @@ a{
   font-weight: 400;
 }
 li{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: 'Montserrat',
   sans-serif;
 }
@@ -48,7 +78,7 @@ li a:hover{
 
 .contact{
   border: 2px solid #FF4500;
-  padding: 10px;
+  padding: 10px 25px;
 }
 
 .contact:hover {
@@ -85,12 +115,12 @@ nav ul {
 }
 
 .home{
-  height: 500px;
+  height: 400px;
 }
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-color: none;
+  background-co5or: none;
   
 }
 
@@ -150,6 +180,13 @@ img {
 .showcase{
   margin-top: 150px;
 }
+
+.sections-title {
+  color:#445;
+  font-size: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
 footer {
   background-color: #445;
   color: #ffffff;
@@ -187,6 +224,8 @@ h5 {
 }
 
 .call-to-action-btn {
+  width: 350px;
+  margin: auto;
   background: #ffffff;
   font-size: 2.5rem;
   color: #FF4500;
@@ -206,3 +245,117 @@ h5 {
   text-align: center;
 }
 
+.portrait {
+  height: 300px;
+  width: auto;
+  margin-bottom: 100px;
+}
+
+.about {
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 550px;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+  padding-top: 50px;
+  padding-bottom: 130px;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
+.about-container {
+  background: #445;
+  color: white;
+
+}
+
+.solutions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 4fr));
+  grid-gap: 1.5rem;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+  /* background: #445; */
+  
+}
+
+p.title{
+  padding-top: 30px;
+}
+
+.grid-item {
+  /* color: #ffffff; */
+  color: #445;
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 550px;
+  height: 500px;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  /* background: #445; */
+ 
+}
+
+.grid-item p{
+  padding: 20px;
+}
+
+h6{
+  font-size: larger;
+  padding: 15px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1.5rem;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.card {
+  color: #445;
+  font-size: 2.5rem;
+  /* border: 1px solid black; */
+   text-align: justify;
+   text-justify: inter-word;
+   padding: 20px;
+}
+
+.card:hover {
+  box-shadow:  1px 1px 10px #445;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.portfolio-logo{
+  padding-bottom: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.card-text{
+  font-size: larger;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.contact-info {
+  font-weight: lighter;
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  .nav-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+} 
