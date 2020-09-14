@@ -10,6 +10,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Raleway:wght@100;800&display=swap"
       rel="stylesheet">
+      <link href="./style/contact-form.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/45c136388c.js" crossorigin="anonymous"></script>
   <title>Fuzzi Logic</title>
 </head>
@@ -26,13 +27,12 @@
             <a href="javascript:void(0)" class="dropbtn"><span class="orange-word">Solutions</span> <i
                 class="arrow right"></i></a>
             <div class="dropdown-content">
-              <a href="#">Web Development</a>
-              <a href="#">Progressive Web Apps</a>
-              <a href="#">Technology Consultant</a>
+              <a href="#solution">Web Development</a>
+              <a href="#solution">Progressive Web Apps</a>
             </div>
           </li>
           <li><a href="#portfolio">Portfolio</a></li>
-         <li><a class="contact" href="#contact">Contact</a></li>
+         <li><a class="contact" href="#contacts">Contact</a></li>
         </ul>
          
       </ul>
@@ -45,63 +45,120 @@
         <h2>Web<span class="orange-word"> Solutions</span> & Design</h2>
         <div class="info">
           <h3>Designing simple <span class="orange-word">solutions</span> for a complex world</h3>
-          <button class="call-to-action-btn">Find Your Solution Now</button>
+          <div class="call-to-action-btn"><a href="#contacts">Find Your Solution Now</a></div>
         </div>
       </div>
     </section>
     <section class="sections-title">
-      <p>ABOUT</p>
-          <p class="about">Hi I'm Chen Prom Founder and CEO of Fuzzi Logic, but more then that I am a problem solver. As
-            technologies advances businesses have to adapt or get left behind. Here at Fuzzi Logic we strive to help
-            businesses grow by designing <span class="orange-word">solutions</span> that will elevate them above their potential.</p>
-          <img src="images/demo-portrait.jpg" alt="my portrait" class="portrait">
+     
+          <div  class="about-container">
+             <p id="about" class="title">ABOUT</p>
+            <p class="about">Hi I'm Chen Prom Founder and CEO of Fuzzi Logic, but more then that I am a problem solver.
+              As technologies advances businesses must adapt or get left behind. Here at Fuzzi Logic we strive to help
+              businesses grow by designing <a class="orange-word">solutions</a> that will
+              elevate them beyond
+              their potential.</p>
+          </div>
     </section>
     <section class="sections-title">
-      <p class="orange-word">SOLUTIONS</p>
+      <p id="solution" class="orange-word title">SOLUTIONS</p>
      <div class="solutions-container">
-       
-          
           <div class="grid-item">
             <h6>Web Development</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus, veniam nulla sunt asperiores
-              alias dolores, maiores facere ratione eveniet beatae nobis maxime. Quidem error cum natus, consectetur
-              corrupti vel.</p>
+              <p>In todays technology centered world a business website is no longer a luxury but a necessity.  Your website is your identity and potential customers use it to learn and evaluate whether to to give you their hard earned money.   </p>
+              <p>Using the latest web technologies we can design an experience that engages and connects you with your customers.  Ensuring that they remember who you are.
+              </p>
           </div>
           <div class="grid-item">
-            <h6>PWA</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus, veniam nulla sunt asperiores
-              alias dolores, maiores facere ratione eveniet beatae nobis maxime. Quidem error cum natus, consectetur
-              corrupti vel.</p>
+            <h6>Progressive Web Apps</h6>
+              <p>Progressive Web Apps are web apps that use web technologies to bring a native app-like user experience to cross-platform web applications.  They bridges the gaps between responsive web pages and mobile apps.  
+              </p>
+              <p>
+                Progressive Web Apps are light weight, fast and highly scalable. With a Progressive Web App you can build one application that will run on any operating system.
+              </p>
           </div>
-          <div class="grid-item">
-            <h6>Technology Consultant</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus, veniam nulla sunt asperiores
-              alias dolores, maiores facere ratione eveniet beatae nobis maxime. Quidem error cum natus, consectetur
-              corrupti vel.</p>
-          </div>
-        
      </div>
     </section>
-    <section class="sections-title portfolio">
+    <section id="portfolio" class="sections-title portfolio">
       <p>PORTFOLIO</p>
+      <div class="card-container">
+          <div class="card">
+            <a href="https://enigmatic-wildwood-51842.herokuapp.com/" target="_blank"><img class="portfolio-logo"
+                src="./images/coder_book_logos_blue.jpeg" class="card-img-top" alt="CoderBook Logo" /></a>
+            <div class="card-body">
+              <a href="https://enigmatic-wildwood-51842.herokuapp.com/" target="_blank">
+                <p class="card-text">Coder Book</p>
+                <p class="coder-book-text">Social Media Web application that connects developers.</p>
+                <!-- <a href="https://github.com/guidoasbun/project3" target="_blank"><i
+                    class="fab fa-github-square fa-2x"></i></a> -->
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <a href="https://cprom.github.io/running-wild/" target="_blank"><img class="portfolio-logo" src="./images/UCIeats_logo_a.png"
+                class="card-img-top img-bottom" alt="UCI Eats logo"></a>
+            <div class="card-body">
+              <a href="https://cprom.github.io/running-wild/" target="#">
+                <a href="https://cprom.github.io/running-wild/">
+                  <p class="card-text">UCI Eats</p>
+                  <p>Web application that helps you search for restaurants and events around your area.</p>
+                </a>
+                <!-- <a href="https://github.com/cprom/running-wild" target="_blank"><i
+                    class="fab fa-github-square fa-2x"></i></a> -->
+            </div>
+          </div>
+          <div class="card">
+            <a href="https://outbreakstatus.herokuapp.com/" target="_blank"><img class="portfolio-logo"
+                src="./images/OSbiohazzard_a.png"
+                class="card-img-top img-bottom" alt="Bio Hazzard symbol"></a>
+            <div class="card-body">
+              <a href="#">
+                <p class="card-text">Outbreak Status</p>
+                <p>Web application that helps you track COVID-19.</p>
+                <!-- <a href="https://github.com/EvanErickson/outbreakStatus" target="_blank"><i
+                    class="fab fa-github-square fa-2x"></i></a> -->
+              </a>
+            </div>
+          </div>
+
+             <div class="card">
+               <a href="https://cprom.github.io/weather-dashboard/" target="_blank"><img class="portfolio-logo"
+                   src="./images/temp-logo.png"> </a>
+               <div class="card-body">
+                 <a href="#">
+                   <p class="card-text">Weather Dashboard</p>
+                   <p>Weather App that gives you the five day forecast.</p>
+                   <!-- <a href="https://github.com/EvanErickson/outbreakStatus" target="_blank"><i
+                       class="fab fa-github-square fa-2x"></i></a> -->
+                 </a>
+               </div>
+             </div>
+
+        
+      </div>
+
+      </div>
+
     </section>
-    <section class="sections-title contacts">
+    <section id="contacts" class="sections-title contacts">
       <p>CONTACT</p>
+      <p class="contact-info">+1 (949) 777-6805</p>
+      <p class="contact-info">chen.prom@gmail.com</p>
     </section>
     <footer class="page-footer">
       <div class="footer-container">
             <a href="https:www.fuzzilogic.tech">
-              <h5> class="orange-word">Fuzzi / Logic</h5>
+              <h5 class="orange-word">Fuzzi / Logic</h5>
             </a>
             
             <p class="address">Bellflower California</p>
           <div class="footer-links">
               <a href="https://www.linkedin.com/in/chenprom" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-              <a href="https://www.instagram.com/shootti3ride/" target="_blank"><i
+              <a href="https://www.instagram.com/fuzzilogicdottech/" target="_blank"><i
                   class="fab fa-instagram fa-3x"></i></a>
               <a href="https://github.com/cprom" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
           </div>
-         © 2020 Copyright
+         © 2020 Copyright Chen Prom
       </div>
     </footer>
   </main>
