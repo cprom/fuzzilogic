@@ -12,7 +12,7 @@ body {
   color: #445;
   font-family: 'Raleway',
   sans-serif;
-  height: 100vh;
+  height: 100%;
   cursor: none;
   margin: 0 auto;
 }
@@ -49,7 +49,7 @@ color: #FF4500;
 font-family: 'Orbitron',
 sans-serif;
 }
-h2{
+.large-text{
   font-size: 6.5rem;
   font-weight: bolder;
 }
@@ -116,6 +116,7 @@ nav ul {
 
 .home{
   height: 400px;
+  
 }
 
 li a:hover,
@@ -173,13 +174,28 @@ img {
   max-width: fit-content;
   text-align: center;
   margin: auto;
-  width: 95vw;
+  width: 100%;
+}
+
+.img-container {
+ position: relative;
+ text-align: center;
+}
+
+.main-image{
+   opacity: .5;
+}
+
+
+.showcase{
+  /* margin-top: 150px; */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
   
 }
 
-.showcase{
-  margin-top: 150px;
-}
 
 .sections-title {
   color:#445;
@@ -226,12 +242,20 @@ h5 {
 .call-to-action-btn {
   width: 350px;
   margin: auto;
-  background: #ffffff;
+  background: #FF4500;
   font-size: 2.5rem;
-  color: #FF4500;
   padding: 20px;
-  border:2px solid #FF4500;
+
   margin-top: 20px;
+}
+
+.call-to-action-btn a{
+  color: #445;
+  font-weight: 600;
+}
+
+.call-to-action-btn a:hover {
+  color: white;
 }
 
 .call-to-action-btn:hover{ color: #ffffff; background: #FF4500; transition: .5s; -webkit-transition: .5s; -moz-transition: .5s; -ms-transition: .5s; -o-transition: .5s;
@@ -328,12 +352,13 @@ h6{
 }
 
 .card:hover {
-  box-shadow:  1px 1px 10px #445;
+  box-shadow: 1px 1px 10px #445;
   transition: .5s;
   -webkit-transition: .5s;
   -moz-transition: .5s;
   -ms-transition: .5s;
   -o-transition: .5s;
+ 
 }
 
 .portfolio-logo{
@@ -353,9 +378,60 @@ h6{
   padding-bottom: 20px;
 }
 
-@media only screen and (max-width: 400px) {
-  .nav-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+@media only screen and (max-width: 768px) {
+
+ html {
+   font-size: 50%;
+ }
+
+ #logo{
+   margin-bottom: 20px;
+ }
+
+ nav {
+  display: flex;
+  flex-direction: column;
+
+ }
+
+ nav ul li {
+   margin: 0 1.5rem;
+ }
+}
+
+
+@media only screen and (max-width: 670px) {
+
+  #logo {
+    font-size: 800%;
   }
-} 
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    background: #445;
+    border: 1px solid #445;
+    padding: 2px;
+    width: 50vw;
+    height: 40px;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+nav a {
+  color: #ffffff;
+}
+
+  .contact {
+    border: none;
+    padding: 10px 25px;
+  }
+}
