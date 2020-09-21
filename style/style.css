@@ -240,12 +240,11 @@ h5 {
 }
 
 .call-to-action-btn {
-  width: 350px;
+  width: 400px;
   margin: auto;
   background: #FF4500;
   font-size: 2.5rem;
   padding: 20px;
-
   margin-top: 20px;
 }
 
@@ -496,6 +495,15 @@ nav a {
 
   .grid-item {
     width: 95vw;
+  }
+
+  .call-to-action-btn {
+    width: 350px;
+    margin: auto;
+    background: #FF4500;
+    font-size: 2.5rem;
+    padding: 20px;
+    margin-top: 20px;
   }
   
 }
