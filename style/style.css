@@ -121,7 +121,7 @@ nav ul {
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-co5or: none;
+  background-color: none;
   
 }
 
@@ -405,6 +405,12 @@ h6{
   #logo {
     font-size: 800%;
   }
+  
+  nav.nav-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
 
   nav ul {
     display: flex;
@@ -413,17 +419,11 @@ h6{
 
   nav li {
     background: #445;
-    border: 1px solid #445;
+    border-bottom: 1px solid #ffffff;
     padding: 2px;
-    width: 50vw;
+    width: 100vw;
     height: 40px;
     padding-top: 10px;
-    justify-content: space-evenly;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
 nav a {
@@ -433,5 +433,63 @@ nav a {
   .contact {
     border: none;
     padding: 10px 25px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+
+  body {
+    text-align: center;
+  }
+
+  .large-text {
+   font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 50%;
+  }
+
+
+  #logo {
+    margin-top: 10px;
+    font-size: 600%;
+  }
+
+  nav.nav-container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav li {
+    background: #445;
+    border-bottom: 1px solid #ffffff;
+    padding: 2px;
+    width: 100vw;
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  nav a {
+    color: #ffffff;
+  }
+
+  .contact {
+    border: none;
+    padding: 10px 25px;
+  }
+
+  .about {
+    width: 80vw;
+  }
+
+  .grid-item {
+    width: 80vw;
   }
 }
