@@ -370,7 +370,8 @@ h6{
 .card-text{
   font-size: larger;
   font-weight: bolder;
-  padding: 10px;
+  padding: 10px 0px;
+  
 }
 
 .contact-info {
@@ -450,11 +451,12 @@ nav a {
   }
 
   .large-text {
-   font-size: 30px;
+   font-size: 40px;
   }
   
   h3 {
-    font-size: 50%;
+    font-size: 60%;
+    
   }
 
 
