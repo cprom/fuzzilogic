@@ -18,7 +18,7 @@ button.btn {
 }
 
 .form-btn {
-  width: 50%;
+  width: 150px;
   margin: auto;
 
 }
@@ -28,14 +28,14 @@ button.btn {
 }
 
 form {
-  width: 600px;
+  width: 100vw;
   height: auto;
   margin: auto;
   border: 1px solid white;
   padding: 40px;
   background-color: rgb(219, 219, 219);
   margin-top: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 00px;
   /* border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -48,6 +48,9 @@ form {
   flex-direction: column;
   color: #445;
   text-align: left;
+}
+form p {
+  font-size: 30px;
 }
 
 input {
