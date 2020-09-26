@@ -247,15 +247,32 @@ h5 {
 }
 
 .call-to-action-btn a{
-  color: #445;
+  color: #FFF;
   font-weight: 600;
 }
 
 .call-to-action-btn a:hover {
   color: white;
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
 }
 
-.call-to-action-btn:hover{ color: #ffffff; background: #FF4500; transition: .5s; -webkit-transition: .5s; -moz-transition: .5s; -ms-transition: .5s; -o-transition: .5s;
+.call-to-action-btn:hover{
+  color: #ffffff;
+  border-radius: 15px;
+  background: #FF4500;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 .address{
   padding: 1.5rem;
@@ -349,13 +366,17 @@ h6{
 }
 
 .card:hover {
+  border-radius: 15px;
   box-shadow: 1px 1px 10px #445;
-  transition: .5s;
-  -webkit-transition: .5s;
-  -moz-transition: .5s;
-  -ms-transition: .5s;
-  -o-transition: .5s;
- 
+  transition: .7s;
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .portfolio-logo{
