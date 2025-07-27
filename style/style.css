@@ -370,22 +370,7 @@ h6{
   background-color: white;
 }
 
-
-.card:hover {
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px #445;
-  transition: .7s;
-  -webkit-transition: .7s;
-  -moz-transition: .7s;
-  -ms-transition: .7s;
-  -o-transition: .7s;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
-}
-
-.portfolio-logo{
+.portfolio-logo {
   padding: 20px;
   height: 200px;
   width: 200px;
