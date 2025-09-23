@@ -1260,6 +1260,12 @@ ul.slides li {
   background: linear-gradient(744deg,#af40ff,#5b42f3 60%,#00ddeb);
 }
 
+.column {
+  flex: 1; /* Distribute space equally among columns */
+  padding: 10px;
+  box-sizing: border-box; /* Include padding in the element's total width/height */
+}
+
 .icon {
   width: 3em;
   margin-top: -1em;
