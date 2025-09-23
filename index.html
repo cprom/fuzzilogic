@@ -1,157 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Web design, development and digital marketing company.">
-  <link rel="stylesheet" href="./style/style.css">
-        <link href="./style/contact-form.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Raleway:wght@300;800&display=swap"
-    rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Orbitron:wght@700&family=Raleway:wght@100;800&display=swap"
-      rel="stylesheet">
-      <script src="https://kit.fontawesome.com/45c136388c.js" crossorigin="anonymous"></script>
-  <title>Chen Prom</title>
-</head>
-<body>
-  <div class="cursor"></div>
-  <main>
-    <nav class="nav-container">
-      <h1 id="logo"><span>Chen</span> / Prom</h1>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn"><span class="orange-word">Solutions</span> <i
-                class="arrow right"></i></a>
-            <div class="dropdown-content">
-              <a href="#web-development">Web Development</a>
-              <a href="#progressive-web-app">Progressive Web Apps</a>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Chen Prom - Professional Web Developer</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+	<!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+	<!-- Custom Favicon -->
+	<!-- <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />  -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body id="top">
+
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
+
+
+	  	<!-- ==========================
+        HEADER SECTION 
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Home</span></a>
+						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>About</span></a>
+						<a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Service</span></a>
+						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portfolio</span></a>
+						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contact</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <h1 class="animated fadeInDown">
+                    Ch<span style="color:#af40ff;">e</span>n<br/>
+                    <span><span style="color:#ffaf40">PRo</span>m</span>
+                  </h1><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Developer, Problem Solver, Web Design, SEO</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			            <p>SEE MORE</p>
+			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+			        </a>
+                </div>
+              </div>
             </div>
-          </li>
-          <li><a href="#portfolio">Portfolio</a></li>
-         <li><a class="contact" href="#contacts">Contact</a></li>
-        </ul>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END  
+        =========================== -->
+		
+		
+		
+		
+		<!-- ==========================
+        ABOUT SECTION  
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">A little <span style="color: #ffaf40">about</span> me</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>I’m a web developer who loves turning ideas into clean, responsive, and accessible applications. With a focus on React.js and modern web technologies, I enjoy building tools that make life easier for users and teams.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+<!-- ==========================
+        SERVICE SECTION 
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="container">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">I do amazing things for clients</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                      <i class="fa fa-code"></i><!-- Icon -->
+                    </div>
+                    <h2>Web Developer</h2><!-- Title -->
+                    <p>I build responsive, accessible, and scalable web applications using modern technologies. Whether you need a new platform or improvements to an existing one, I deliver clean, maintainable solutions tailored to your needs.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-desktop"></i><!-- Icon -->
+                    </div>
+                    <h2>Web Designer</h2><!-- Title -->
+                    <p>I design clean, user-friendly websites that balance creativity and functionality. My focus is on creating responsive layouts, intuitive navigation, and visually engaging designs that keep visitors engaged and encourage action.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-globe"></i><!-- Icon -->
+                    </div>
+                    <h2>SEO</h2><!-- Title -->
+                    <p>I help businesses get found online by optimizing websites for search engines and users alike. From keyword strategy and content optimization to technical SEO audits, my services are designed to improve visibility, increase organic traffic, and drive qualified leads.</p><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+		<div class="container-fluid">
+		    <!-- About 1 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about4.jpg)"></div><!-- about image 1 -->
+				</div>
+				<div class="col-md-6 about-text">
+          <h6>Web Development</h6><!-- Headline -->
+					<p>Strong web development is at the core of every successful digital presence. I build responsive, accessible, and scalable web applications using modern technologies, ensuring your website not only looks good but also performs reliably across devices and browsers. Effective development means faster load times, stronger security, and seamless user experiences that keep visitors engaged. Whether you need a new platform or want to optimize an existing one, I deliver clean, maintainable solutions that support long-term growth and business goals.</p><br><!-- About Text 2 -->
+					
+					 			
+				</div>
+			</div>
+			<!-- About 2 -->
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<h6>High quality webdesign</h6><!-- headline-->
+					<p>Web design is more than visuals — it’s about creating intuitive, engaging experiences that guide visitors effortlessly. I design responsive, user-friendly websites that blend creativity with functionality, ensuring your brand stands out while staying easy to navigate. A strong design not only builds trust but also improves usability, accessibility, and conversion rates. My goal is to craft designs that look beautiful, feel seamless, and work across all devices to leave a lasting impression.</p><br><!-- About Text 1 -->
+								
+				</div>
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about5.jpg)"></div><!-- about image 2 -->
+				</div>
+			</div>
+			<!-- About 3 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/about6.jpg)"></div><!-- about image 3 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>SEO</h6><!-- Headline-->
+					<p>SEO is essential for making sure your business gets discovered in today’s crowded digital landscape. I help businesses increase visibility by optimizing websites for both search engines and users. From keyword strategy and on-page optimization to technical audits and content planning, I focus on driving qualified traffic that converts into real results. Effective SEO means sustainable growth, stronger online presence, and staying ahead of the competition — all built on a data-driven, long-term strategy.</p><br><!-- About Text 3 -->
+									
+				</div>
+			</div>
+		</div>
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->	
+
+		
+		
+		
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+        <section class="swag text-center" id="portfolio">
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <h1 class="arrow">
+                Recent <span>Projects</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="container" style="display: flex; justify-content: space-between">
        
-    </nav>
-    <div class="img-container">
-      <img class="main-image" src="./images/collab_2400x1600.jpg" alt="group of people collborating at a desk">
-        <div class="showcase">
-          <div class="large-text">Web<span class="orange-word"> Solutions</span> & Design
-          <h3>Web Development Simplified</h3>
-          <div class="call-to-action-btn"><a href="#contacts">Let's find a solution together</a></div>
-          </div>
-        </div>
-    </div>
-   
-    <section class="sections-title">
-          <div  class="about-container">
-             <p id="about" class="title">ABOUT</p>
-            <p class="about">Hi I'm Chen Prom a Web Developer.
-              As technologies advances businesses must adapt or get left behind. I strive to help
-              businesses grow by designing <a class="orange-word">solutions</a> that will
-              elevate them beyond their potential.</p>
-          </div>
-    </section>
-    <section class="sections-title">
-      <p id="solution" class="orange-word title">SOLUTIONS</p>
-     <div class="solutions-container">
-          <div class="grid-item">
-            <h6 id="web-development">Web Development</h6>
-              <p>In today's digital centered world a business website is no longer a luxury but a necessity.  Your website is your identity and potential customers use it to learn and evaluate whether to to give you their hard earned money.   </p>
-              <p>Using the latest web technologies I can design an experience that will engage and connect you with your customers.  Ensuring that they remember who you are.
-              </p>
-          </div>
-          <div class="grid-item">
-            <h6 id="progressive-web-app">Progressive Web Apps</h6>
-              <p>Progressive Web Apps are apps that use web technologies to bring a native app-like user experience to cross-platform web applications.  They bridges the gaps between responsive web pages and mobile apps.  
-              </p>
-              <p>
-                Progressive Web Apps are light weight, fast and highly scalable. With a Progressive Web App you can build an application on one codebase that will run on any device.
-              </p>
-          </div>
-     </div>
-    </section>
+  				 
+          <!-- PORTFOLIO ITEM 1 -->
+           <a href="https://cprom.github.io/brain-bright-ts/" target="_blank">
+            <div class="e-card playing">
+              <div class="image"></div>
 
-    <!-- Portfolio -->
-    <section  class="sections-title portfolio"  style="padding-bottom: 10px;">
-      <p id="portfolio" style="padding-top: 25px">PORTFOLIO</p>
-      <div class="card-container">
-          <div class="card">
-            <a href="https://cprom.github.io/brain-bright-ts/#/" target="_blank" rel="noreferrer"><img
-                class="portfolio-logo"
-                src="./images/logoBB.png" class="card-img-top" alt="CoderBook Logo" /></a>
-            <div class="card-body">
-              <a href="https://cprom.github.io/brain-bright-ts/#/" target="_blank" rel="noreferrer">
-                <p class="card-text">Brain Bright</p>
-                <p class="coder-book-text">This project was inspired by my 2 daughters, and aims to support them and other young learners in a fun, interactive, and accessible way.  
-                            The platform was designed to support their educational growth and is meant to supplement their learning journey by providing interactive lessons in math, 
-                            reading, and writing.</p>
-              </a>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="infotop">
+              <br>      
+              Brain Bright
+              <br>
+              <div class="name">Learning Web Application</div>
+              </div>
+            </div>
+            </a>
+          <!-- PORTFOLIO ITEM 2 -->
+          <a href="https://cprom.github.io/ITSE1411-Final-Project/index.html" target="_blank">
+              <div class="e-card playing">
+              <div class="image"></div>
+
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="wave"></div>
+              <div class="infotop">
+              <br>      
+              Coffee Racer
+              <br>
+              <div class="name">Building a Cafe Racer</div>
+              </div>
+              </div>
+            </a>
+         
+  	    <!-- PORTFOLIO ITEM END -->
+  					
+       
+      </div><!--/.container-->
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+			
+		
+		
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <a href="index.html#top" class="up-btn" style="background-color: #ffaf40;"><i class="fa fa-chevron-up"></i></a>
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-6">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Address</span></h2>
+                  <p>Long Beach, California</p>
+                </div>
+              </div>
+			  <!-- Phone Number Box -->
+              <!-- <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Phone</span></h2>
+                  <p>+12 345 6789</p>
+                </div>
+              </div> -->
+			  <!-- E-Mail Box -->
+              <div class="col-md-6">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">cprom.dev@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+			<div class="row">
+
+			  <!-- Contact Form -->
+			  <div class="col-md-12 contact">
+			     <form role="form" action="MAILTO:cprom.dev@gmail.com" >
+				            <!-- Name -->
+                            <div class="row">
+                                <div class="col-md-6">
+								    <!-- E-Mail -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+								    <!-- Phone Number -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email address">
+                                    </div>
+                                </div>
+                            </div>
+							<!-- Message Area -->
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+                            </div>
+							<!-- Subtmit Button -->
+                            <button type="submit" class="btn btn-send">
+                                Send message
+                            </button>
+                        </form>
+			  </div>
+			</div>
+			<br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="index.html#" class="social-btn"><i class="fa fa-github"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-             <div class="card">
-               <a href="https://cprom.github.io/ITSE1411-Final-Project/index.html" target="_blank" rel="noreferrer">
-                <img
-                   class="portfolio-logo"
-                   src="./images/cafe-racer-logo-white.png" alt="thermometer icon" style="background-color: #445; "> 
-                  </a>
-               <div class="card-body">
-                 <a href="#">
-                   <p class="card-text">Project Coffee Racer</p>
-                   <p>A Project created for a Web Development Class that highlights my passion for motorcyles.</p>
-                 
-                 </a>
-               </div>
-             </div>
-      </div>
-
-    </section>
-
-
-    <section id="contacts" class="sections-title contacts">
-      <form form action="MAILTO:chen.prom@gmail.com" style="max-width: 1600px;">
-       <p class="contact-title">CONTACT ME</p>
-       <p class="contact-info">chen.prom@gmail.com</p>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" aria-describedby="fullName" placeholder="Full Name">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
-            aria-describedby="emailHelp">
-          <p id="emailHelp" class="email-disclaimer">We'll never share your email with anyone else.</p>
-        </div>
-        <div class="form-group">
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
+		
+		
+		
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
+              </div>
+            </div>
           </div>
-          <div class="form-btn">
-            <button type="submit" class="btn">Submit</button>
-          </div>
-      </form>
-    </section>
-    <footer class="page-footer">
-      <div class="footer-container">
-            <a href="https://cprom.github.io/fuzzilogic/">
-              <h5 class="orange-word">Chen / Prom</h5>
-            </a>
-            
-            <p class="address">Long Beach California</p>
-          <div class="footer-links">
-              <a href="https://www.linkedin.com/in/chenprom" target="_blank" rel="noreferrer"><i
-                  class="fab fa-linkedin fa-3x"></i></a>
-              <a href="https://github.com/cprom" target="_blank" rel="noreferrer"><i
-                  class="fab fa-github-square fa-3x"></i></a>
-          </div>
-         © 2020 Copyright Chen Prom.  All Rights Reserved
-      </div>
-    </footer>
-  </main>
-  <script src="script.js"></script>
-</body>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->		
+		
+		
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->           
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps --> 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 
+
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
+    </script>
+	
+    </body>
 </html>
