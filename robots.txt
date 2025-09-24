@@ -1,0 +1,12 @@
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Disallow sensitive folders (if any)
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /node_modules/
+Disallow: /admin/
+
+# Sitemap location
+Sitemap: https://cprom.github.io/fuzzilogic/sitemap.xml
