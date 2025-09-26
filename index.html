@@ -322,26 +322,28 @@
 
 			  <!-- Contact Form -->
 			  <div class="col-md-12 contact">
-			     <form role="form" action="MAILTO:cprom.dev@gmail.com" >
+			     <form role="form" action="https://api.web3forms.com/submit" method="POST" >
+            <input type="hidden" name="access_key" value="f6b3bfca-8ea5-49e7-bf18-cf6c78a95bc0">
 				            <!-- Name -->
                             <div class="row">
                                 <div class="col-md-6">
 								    <!-- E-Mail -->
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Your name">
+                                        <input type="text" name="name" class="form-control" placeholder="Your name">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
 								    <!-- Phone Number -->
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email address">
+                                        <input type="email" name="email" class="form-control" placeholder="Email address">
                                     </div>
                                 </div>
                             </div>
 							<!-- Message Area -->
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
+                                <textarea name="message" class="form-control" placeholder="Write you message here..." style="height:232px;"></textarea>
                             </div>
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 							<!-- Subtmit Button -->
                             <button type="submit" class="btn btn-send">
                                 Send message
